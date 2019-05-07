@@ -40,8 +40,8 @@ class NeuralNetwork(object):
         self.backPropagtion(X, y, result)
         print("Error: ", np.mean(np.square(self.error)))
         while np.mean(np.square(self.error)) > error:
-            self.backPropagtion(X, y, result)
             result = self.predict(X)
+            self.backPropagtion(X, y, result)
 
         print("Error: ", np.mean(np.square(self.error)))
 
