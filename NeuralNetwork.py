@@ -1,4 +1,5 @@
 import numpy as np
+import os.path
 
 
 class NeuralNetwork(object):
@@ -7,8 +8,7 @@ class NeuralNetwork(object):
         self.neu_output = neu_output
         self.neu_hidden = neu_hidden
 
-        self.WI = np.random.randn(self.neu_input, self.neu_hidden)
-        self.WO = np.random.randn(self.neu_hidden, self.neu_output)
+        self.read()
 
         self.error = 0
         self.delta = 0
@@ -39,12 +39,16 @@ class NeuralNetwork(object):
         result = self.predict(X)
         self.backPropagtion(X, y, result)
         print("Error: ", np.mean(np.square(self.error)))
+        print("WI: ", self.WI)
+        print("W0: ", self.WO)
         while np.mean(np.square(self.error)) > error:
             result = self.predict(X)
             self.backPropagtion(X, y, result)
 
         print("Error: ", np.mean(np.square(self.error)))
-
+        print("WI: ", self.WI)
+        print("W0: ", self.WO)
+        self.write()
 
     def predict(self, X):
         self.inp = np.dot(X, self.WI)
@@ -82,3 +86,24 @@ class NeuralNetwork(object):
         X = X / np.amax(X, axis=0)
         y = y / np.amax(y, axis=0)
         return X, y
+
+    def write(self):
+
+        name = "weights\{0}input.txt".format(self.neu_hidden)
+        np.savetxt(name, self.WI)
+
+        name = "weights\{0}output.txt".format(self.neu_output)
+        np.savetxt(name, self.WO)
+
+    def read(self):
+        file = "weights\{0}input.txt".format(self.neu_hidden)
+        if (os.path.exists(file)):
+            self.WI = np.loadtxt(file)
+        else:
+            self.WI = np.random.randn(self.neu_input, self.neu_hidden)
+
+        file = "weights\{0}output.txt".format(self.neu_output)
+        if (os.path.exists(file)):
+            self.WO = np.loadtxt(file)
+        else:
+            self.WO = np.random.randn(self.neu_hidden, self.neu_output)
