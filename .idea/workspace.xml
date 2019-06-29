@@ -2,14 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d3bb4e29-c1de-4f7a-8612-c6df93b24968" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/15input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/4output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distancing/KNN.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distancing/Main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/distancing/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/neural/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNetwork.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetwork.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.py" beforeDir="false" afterPath="$PROJECT_DIR$/neural/Main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeuralNetwork.py" beforeDir="false" afterPath="$PROJECT_DIR$/neural/NeuralNetwork.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/Numeros" beforeDir="false" afterPath="$PROJECT_DIR$/data/Numeros" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/Teste" beforeDir="false" afterPath="$PROJECT_DIR$/data/Teste" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/Teste02" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weights/15input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weights/4output.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,26 +21,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data/Teste">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/Numeros">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -62,7 +46,6 @@
       <find>1 1 0 1 0 0 0 1 0 0 0 1 0 1 1 0 1 0 1</find>
       <find>1 1 0 1 0 0 1 1 1 0 0 1 0 1 1 0 1 0 1</find>
       <find>0 1 0 1 0 0 1 1 1 0 0 1 0 1 0 0 1 0 1</find>
-      <find>,</find>
       <find>0 1 0 1 0 1 1 1 1 1 0 1 1 1 1 1 0 0 0</find>
       <find>1 1 0 1 0 1 1 1 1 0 0 1 0 1 1 1 0 0 1</find>
       <find>1 1 1 1 0 0 1 1 1 0 0 1 1 1 1 0 1 0 1</find>
@@ -70,6 +53,7 @@
       <find>1 1 1 0 0 1 1 1 1 0 0 1 1 1 1 0 0 1 1</find>
       <find>1 1 1 0 0 1 1 1 1 1 0 0 1 1 1 0 0 1 0</find>
       <find>0 1 0 1 0 1 1 1 1 0 0 1 0 1 1 1 0 0 1</find>
+      <find>,</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -81,6 +65,7 @@
       <replace>sigmoidDerivative</replace>
       <replace>result</replace>
       <replace>backPropagtion</replace>
+      <replace />
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -102,12 +87,15 @@
         <option value="$PROJECT_DIR$/OutputLayer.py" />
         <option value="$PROJECT_DIR$/data/Teste01" />
         <option value="$PROJECT_DIR$/data/Teste03" />
-        <option value="$PROJECT_DIR$/Main.py" />
         <option value="$APPLICATION_CONFIG_DIR$/pycharm64.exe.vmoptions" />
-        <option value="$PROJECT_DIR$/NeuralNetwork.py" />
-        <option value="$PROJECT_DIR$/data/Numeros" />
         <option value="$PROJECT_DIR$/data/Teste02" />
+        <option value="$PROJECT_DIR$/NeuralNetwork.py" />
+        <option value="$PROJECT_DIR$/data/numeros2" />
+        <option value="$PROJECT_DIR$/data/Numeros" />
         <option value="$PROJECT_DIR$/data/Teste" />
+        <option value="$PROJECT_DIR$/Main.py" />
+        <option value="$PROJECT_DIR$/distancing/KNN.py" />
+        <option value="$PROJECT_DIR$/distancing/Main.py" />
       </list>
     </option>
   </component>
@@ -117,30 +105,22 @@
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="MachineLearning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MachineLearning" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/MLP-backpropagation" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ML-T02" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -155,6 +135,12 @@
       </console-settings>
     </option>
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\guilh\OneDrive\Documentos\MachineLearning\neural" />
+      <recent name="C:\Users\guilh\OneDrive\Documentos\MachineLearning" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -167,7 +153,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Main">
+  <component name="RunManager" selected="Python.Main (1)">
     <configuration name="Back_Propagation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Aperndizado_de_Maquina" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -190,17 +176,42 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Aperndizado_de_Maquina" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/distancing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/distancing/Main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Aperndizado_de_Maquina" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Main.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\guilh\OneDrive\Documentos\MachineLearning\neural\Main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -213,13 +224,16 @@
       <module name="Aperndizado_de_Maquina" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NeuralNetwork.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\guilh\OneDrive\Documentos\MachineLearning\neural\NeuralNetwork.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -252,6 +266,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Main (1)" />
         <item itemvalue="Python.Main" />
         <item itemvalue="Python.NeuralNetwork" />
         <item itemvalue="Python.Back_Propagation" />
@@ -275,11 +290,17 @@
       <workItem from="1557330196240" duration="2827000" />
       <workItem from="1557333091653" duration="464000" />
       <workItem from="1557333585868" duration="3512000" />
+      <workItem from="1557351472004" duration="1693000" />
+      <workItem from="1557353765416" duration="1753000" />
+      <workItem from="1557355557875" duration="486000" />
+      <workItem from="1558564609066" duration="593000" />
+      <workItem from="1558565471837" duration="1275000" />
+      <workItem from="1559825216280" duration="93000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50927000" />
+    <option name="totallyTimeSpent" value="56820000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -293,7 +314,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.27155825" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49918166" visible="true" weight="0.2980333" />
       <window_info id="Structure" order="1" sideWeight="0.5008183" side_tool="true" weight="0.2677761" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -308,7 +329,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50075644" side_tool="true" weight="0.95090014" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3289689" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49924356" weight="0.95090014" />
+      <window_info anchor="bottom" x="0" y="0" width="1366" height="728" id="Python Console" maximized="true" order="12" sideWeight="0.49924356" side_tool="true" type="FLOATING" weight="0.95090014" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -345,49 +366,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weights/input.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weights/output.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/weights/input.txt" />
+    <entry file="file://$PROJECT_DIR$/weights/output.txt" />
     <entry file="file://$PROJECT_DIR$/weights/4output.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/NeuralNetwork.py">
+    <entry file="file://$PROJECT_DIR$/data/Teste02" />
+    <entry file="file://$PROJECT_DIR$/data/numeros2" />
+    <entry file="file://$PROJECT_DIR$/data/Teste">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="136">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Numeros">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/distancing/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neural/Main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/neural/NeuralNetwork.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/Teste02">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/Numeros">
+    <entry file="file://$PROJECT_DIR$/distancing/KNN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+        <state relative-caret-position="153">
+          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/Teste">
+    <entry file="file://$PROJECT_DIR$/distancing/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="37" />
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
         </state>
       </provider>
     </entry>

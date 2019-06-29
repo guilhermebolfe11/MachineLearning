@@ -1,6 +1,6 @@
 import numpy as np
 
-from NeuralNetwork import NeuralNetwork
+from neural.NeuralNetwork import NeuralNetwork
 
 print("----------------- NEURAL NETWORK -------------------")
 print("Rede perceptron capaz de reconhecer os 10 digitos numericos\n"

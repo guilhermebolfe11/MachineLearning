@@ -31,8 +31,8 @@ class NeuralNetwork(object):
         self.hid_error = self.delta.dot(self.WO.T)
         self.hid_delta = self.hid_error * self.sigmoidDerivative(self.hid)
 
-        self.WI += X.T.dot(self.hid_delta)
-        self.WO += self.hid.T.dot(self.delta)
+        self.WI += 0.01 * X.T.dot(self.hid_delta)
+        self.WO += 0.01 * self.hid.T.dot(self.delta)
 
     def training(self, X, y, error):
         print("----------------- TRAINING ------------------")
@@ -69,6 +69,8 @@ class NeuralNetwork(object):
         print("Expected Output: \n" + str(y))
         print()
         data = self.predict(x)
+        print("------------------- ACCURACY ----------")
+        print("Acurracy: \n" + str(data))
         for i in data:
             for j in range(0, 4):
                 if i[j] > 0.5:
